@@ -1,3 +1,5 @@
+import os
+import json
 import csv
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
