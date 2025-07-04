@@ -185,7 +185,7 @@ client = gspread.authorize(creds)
 
 # OPEN GOOGLE SHEET
 sheet = client.open('S1_RA').worksheet('S1 RA')  
-sheet1 = client.open('S1_RA_Old').worksheet('S1 RA Old')  
+sheet1 = client.open('S1_RA').worksheet('S1 RA Old')  
 
 sheet1.clear()
 data = sheet.get_all_values()
