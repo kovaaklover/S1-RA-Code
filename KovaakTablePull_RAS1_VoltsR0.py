@@ -184,8 +184,8 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
 
 # OPEN GOOGLE SHEET
-sheet = client.open('S1_RA').sheet1
-sheet1 = client.open('S1_RA_Old').sheet1
+sheet = client.open('S1_RA').worksheet('S1 RA')  
+sheet1 = client.open('S1_RA_Old').worksheet('S1 RA Old')  
 
 sheet1.clear()
 data = sheet.get_all_values()
