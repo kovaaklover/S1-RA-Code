@@ -183,6 +183,11 @@ client = gspread.authorize(creds)
 
 # OPEN GOOGLE SHEET
 sheet = client.open('S1_RA').sheet1
+sheet1 = client.open('S1_RA_Old').sheet1
+
+sheet1.clear()
+data = sheet.get_all_values()
+sheet1.update('A1', data)
 
 # CLEAR EXISTING DATA IN GOOGLE SHEET
 sheet.clear()
