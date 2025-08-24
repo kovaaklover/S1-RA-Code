@@ -168,7 +168,7 @@ for key, values in Score_Dic_S.items():
         values[27] = Count
 
     # CONVERT RANKL TO ACTUAL RANKS (NUMBERS TO NAMES)
-    for i in range(len(RankL)):
+    #for i in range(len(RankL)):
         #RankL[i] = Ranks[RankL[i]]
 
     values[0:24] = RankL
@@ -224,4 +224,5 @@ for key, values in Score_Dic_S.items():
 # UPDATE GOOGLE SHEET WITH ALL ARRAY DATA
 start_cell = 'A2'
 sheet.update(rows_to_update, start_cell)
+
 
